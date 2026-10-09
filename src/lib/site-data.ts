@@ -1,9 +1,18 @@
 import {
   Megaphone, Share2, Compass, FileText, MonitorSmartphone, Search, Target, Users, Palette,
+  Instagram, Facebook, Twitter, AtSign,
   type LucideIcon,
 } from "lucide-react";
 
 export const EMAIL = "ridyenk@gmail.com";
+
+export type Social = { label: string; url: string; icon: LucideIcon };
+export const SOCIALS: Social[] = [
+  { label: "Instagram", url: "https://www.instagram.com/ridyenk/", icon: Instagram },
+  { label: "Threads", url: "https://www.threads.net/@ridyenk", icon: AtSign },
+  { label: "Facebook", url: "https://www.facebook.com/ridyenk", icon: Facebook },
+  { label: "X / Twitter", url: "https://x.com/ridyenk", icon: Twitter },
+];
 
 export type Service = {
   slug: string; name: string; short: string; icon: LucideIcon;
